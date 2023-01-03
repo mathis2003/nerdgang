@@ -17,7 +17,7 @@ give_sd <- function(values, chances) {
 
 
 ####################
-## author: Lukas
+## author: Lukas :)
 
 probability_density_function <- function(x) {
   return (...) # hier invullen
