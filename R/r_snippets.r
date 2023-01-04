@@ -66,3 +66,11 @@ df <- ( (s1^2 / n1 + s2^2 / n2)^2 )/( (s1^2 / n1)^2 / (n1 - 1) + (s2^2 / n2)^2 /
 cat("statistic t:", t)
 cat("degrees of freedom:", df)
 cat("p-value", 1 - pt(t, df)) # *2 doen in geval van een two sided alternative!! 
+
+
+####################
+## author: Mathis
+
+# als je een data file inleest, dan is het soms nodig om de kolommen eruit te halen, niet als dataframes, maar als vectors:
+d <- read.table("Downloads/nitrate.dat", header = TRUE)
+col_vec <- d[, "GNA"]
