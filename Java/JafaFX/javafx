@@ -1,0 +1,4 @@
+#!/bin/bash
+# author: Kris Koolsaet
+MODULE_PATH=/usr/lib/jvm/javafx-sdk-17.0.1/lib/
+java --module-path=$MODULE_PATH --add-modules=ALL-MODULE-PATH $@
